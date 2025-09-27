@@ -1,0 +1,841 @@
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sansita+Swashed:wght@300..900&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(7, fr);
+            grid-template-areas:
+                "box1"
+                "box2"
+                "box3"
+                "box4"
+                "box5"
+                "box6"
+                "box7";
+        }
+
+        .box1 {
+            grid-area: box1;
+
+        }
+
+        .background-part-one {
+            width: 100%;
+            height: 1000px;
+            background-image: url(./image/a.png);
+            /* background-repeat: no-repeat; */
+            /* background-attachment: fixed; */
+            background-size: cover;
+        }
+
+        .logo-bra img {
+            width: 100px;
+            margin-top: 40px;
+            margin-left: 30px;
+        }
+
+        .bra {
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin: 0px 50px;
+            font-weight: 600;
+            font-size: 25px;
+        }
+
+        .manu-bra {
+            font-size: 30px;
+            margin-left: 160px;
+            margin-top: 50px;
+        }
+
+        .manu-bra a {
+            text-decoration: none;
+            font-family: "Poppins";
+            color: white;
+            margin: 0px 10px;
+        }
+
+        .manu-bra a:hover {
+            cursor: pointer;
+            color: #a06363;
+            transition: 0.3s ease;
+        }
+
+        #bra-home {
+            color: #E9BD8C;
+        }
+
+        #bra-home:hover {
+            cursor: pointer;
+            color: #a06363;
+        }
+
+        .part-one {
+            margin-top: 200px;
+        }
+
+        .title-one {
+            margin: 150px 90px;
+        }
+
+        .title-one p {
+            color: white;
+            font-size: 89px;
+            font-family: "Sansita Swashed";
+            line-height: 10px;
+            margin-top: 55px;
+        }
+
+        #title-text {
+            color: #E9BD8C;
+            font-family: "Inter";
+            font-size: 25px;
+            font-weight: 600;
+        }
+
+        .shopnow {
+            color: aliceblue;
+            font-size: 30px;
+            display: flex;
+            font-family: "Inter";
+            margin: 100px 90px;
+        }
+
+        .button-shop {
+            padding: 20px 50px;
+            background-color: #933C24;
+            color: #ffffff;
+            border-radius: 10px;
+            font-weight: 600;
+        }
+
+        .button-shop:hover {
+            cursor: pointer;
+            background-color: #ffe1c4;
+            color: #522c02;
+            transition: 0.5s ease;
+        }
+
+        .learn {
+            margin-left: 50px;
+            margin-top: 20px;
+            font-weight: 600;
+            color: #E9BD8C;
+        }
+
+        .learn:hover {
+            cursor: pointer;
+            color: #933C24;
+            transition: 0.3s ease;
+        }
+
+
+
+
+        .box2 {
+            grid-area: box2;
+            /* background-color: blanchedalmond; */
+        }
+
+        .product-one div {
+            margin: 20px;
+        }
+
+        .title-two {
+            font-family: "Sansita Swashed";
+            text-align: center;
+            color: rgb(0, 0, 0);
+            font-size: 80px;
+            font-weight: 600;
+            margin: 80px 0px
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 520px 520px;
+            grid-template-areas:
+                "product-one product-two product-three"
+                "product-four product-five product-six";
+            margin: 0px 100px;
+            margin-bottom: 100px;
+            font-family: "Inter";
+
+        }
+
+        .price p {
+            color: white;
+            margin-left: 10px;
+            margin-bottom: 0;
+            margin-top: 8px;
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        .name-products p {
+            color: white;
+            margin-left: 10px;
+            font-size: 30px;
+            line-height: 5px;
+            font-weight: 500;
+        }
+
+        .prat-name {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .prat-price {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .add div {
+            padding: 15px 15px;
+            background-color: #933C24;
+            border-radius: 5px;
+            font-weight: 400;
+            font-size: 30px;
+            color: #fcfcfc;
+            font-family: "Inter";
+        }
+
+        .add div:hover {
+            cursor: pointer;
+            font-weight: 500;
+            background-color: #ffe1c4;
+            color: #522c02;
+            transition: 0.5s ease;
+        }
+
+        .information p {
+            color: white;
+            font-size: 25px;
+            margin-bottom: 0;
+            margin-right: 30px;
+            margin-top: 0;
+            border: 1px solid white;
+            border-radius: 100%;
+            padding: 10px 21px;
+        }
+
+        .information p:hover {
+            background-color: #ffee005d;
+            cursor: pointer;
+            font-weight: 700;
+            color: rgb(255, 255, 255);
+            border: 1px solid rgb(255, 255, 255);
+        }
+
+        .products div {
+            margin: 10px;
+        }
+
+        .product-one {
+            grid-area: "product-one";
+            background-image: url(./image/b.png);
+            background-size: cover;
+            border-radius: 10px;
+        }
+
+        .product-two {
+            grid-area: "product-two";
+            background-image: url(./image/b.png);
+            background-size: cover;
+            border-radius: 10px;
+        }
+
+        .product-three {
+            grid-area: "product-three";
+            background-image: url(./image/b.png);
+            background-size: cover;
+            border-radius: 10px;
+        }
+
+        .product-four {
+            grid-area: "product-four";
+            background-image: url(./image/b.png);
+            background-size: cover;
+            border-radius: 10px;
+        }
+
+        .product-five {
+            grid-area: "product-five";
+            background-image: url(./image/b.png);
+            background-size: cover;
+            border-radius: 10px;
+        }
+
+        .product-six {
+            grid-area: "product-six";
+            background-image: url(./image/b.png);
+            background-size: cover;
+            border-radius: 10px;
+        }
+
+        .image-products {
+            text-align: center;
+            background-image: url(./image/b.png);
+            background-size: cover;
+            border-radius: 10px;
+        }
+
+        .image-products img {
+            width: 250px;
+            height: 250px;
+            border-radius: 10px;
+        }
+
+        .box3 {
+            grid-area: box3;
+            /* background-color: yellow; */
+        }
+
+        .prat-three {
+            background-image: url(./image/c.png);
+            background-size: cover;
+            height: 500px;
+        }
+
+        .promotion-title {
+            font-family: "Sansita Swashed";
+            font-size: 60px;
+            text-align: center;
+            font-weight: 600;
+            line-height: 0.2;
+            color: #933C24;
+            padding-top: 20px;
+        }
+
+        .promotion-content {
+            font-family: "Inter";
+            text-align: center;
+            font-size: 33px;
+            line-height: 0.2;
+            color: #5D5D5D;
+            margin-bottom: 0px;
+        }
+
+        .button-learnmore {
+            margin-top: 80px;
+            margin-bottom: 100px;
+            text-align: center;
+        }
+
+        .button-learnmore div {
+            display: inline;
+            text-align: center;
+            background-color: #933C24;
+            font-size: 30px;
+            font-family: "Inter";
+            color: white;
+            font-weight: 500;
+            padding: 20px 35px;
+            border-radius: 15px;
+        }
+
+        .button-learnmore div:hover {
+            cursor: pointer;
+            background-color: #d87a00;
+            color: #ffd000;
+            transition: 0.3s ease;
+        }
+
+        .view-git {
+            background-color: yellow;
+        }
+
+        .view {
+            text-align: center;
+            margin-top: 60px;
+            padding-bottom: 70px;
+        }
+
+        .view div {
+            display: inline;
+            text-align: center;
+            background-color: #933C24;
+            font-size: 33px;
+            font-family: "Inter";
+            color: white;
+            font-weight: 500;
+            padding: 15px 40px;
+            border-radius: 10px;
+        }
+
+        .box4 {
+            grid-area: box4;
+            /* background-color: green; */
+        }
+
+        .exploremore {
+            font-family: "Sansita Swashed";
+            text-align: center;
+            color: rgb(0, 0, 0);
+            font-size: 80px;
+            font-weight: 600;
+        }
+
+        .bra-two {
+            text-align: center;
+        }
+
+        .explore-bra {
+            display: flex;
+            justify-content: space-between;
+            margin: 0px 350px;
+        }
+
+        .explore-bra div {
+            margin: 0px 10px;
+            font-family: "Poppins";
+            font-size: 25px;
+            font-weight: 600;
+            color: #5D5D5D;
+        }
+
+        .explore-bra div:hover {
+            cursor: pointer;
+            color: #f8aa00;
+
+            .button-base {
+                background-color: #933c24;
+                transition: 0.5s ease;
+                transform-origin: center center;
+                transform: scaleX(1);
+            }
+        }
+
+        .button-base {
+            width: 100px;
+            height: 6px;
+            border-radius: 3px;
+            transform: scaleX(0) scaleY(1);
+        }
+
+        .explore {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 370px 370px;
+            grid-template-areas:
+                "img-one img-two img-three"
+                "img-four img-five img-six";
+            margin: 0px 100px;
+            margin-bottom: 100px;
+        }
+
+        .explore div {
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        .img-explore img {
+            width: 430px;
+            height: 350px;
+            border-radius: 10px;
+            margin: 10px;
+        }
+
+        .img-one {
+            grid-area: "img-one";
+            text-align: center;
+        }
+
+        .img-two {
+            grid-area: "img-two";
+            text-align: center;
+        }
+
+        .img-three {
+            grid-area: "img-three";
+            text-align: center;
+        }
+
+        .img-four {
+            grid-area: "img-four";
+            text-align: center;
+        }
+
+        .img-five {
+            grid-area: "img-five";
+            text-align: center;
+        }
+
+        .img-six {
+            grid-area: "img-six";
+            text-align: center;
+        }
+
+
+
+        .box5 {
+            grid-area: box5;
+            text-align: center;
+            background-image: url(./image/e.png);
+            background-size: cover;
+        }
+
+        .title-aboutus {
+            font-family: "Sansita Swashed";
+            font-weight: 550;
+            font-size: 60px;
+            color: white;
+            margin-bottom: 0px;
+            padding-top: 30px;
+        }
+
+        .content-aboutus {
+            font-family: "Inter";
+            color: #B9B9B9;
+            line-height: 0.2;
+            font-size: 32px;
+        }
+
+        .button-aboutus {
+            margin-top: 80px;
+            margin-bottom: 100px;
+        }
+
+        .button-aboutus div {
+            display: inline;
+            text-align: center;
+            background-color: #933C24;
+            font-size: 30px;
+            font-family: "Inter";
+            color: white;
+            font-weight: 500;
+            padding: 15px 40px;
+            border-radius: 7px;
+        }
+
+        .button-aboutus div:hover {
+            cursor: pointer;
+            background-color: #ffe1c4;
+            color: #522c02;
+            transition: 0.5s ease;
+        }
+
+        .box6 {
+            grid-area: box6;
+        }
+
+        .title-featuredtreats {
+            text-align: center;
+            font-family: "Sansita Swashed";
+            font-size: 80px;
+            font-weight: 550;
+            margin: 120px 0px;
+        }
+
+        .content-featuredtreats {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 360px;
+            grid-template-areas:
+                "featuredtreats-one featuredtreats-tow featuredtreats-three";
+            margin: 0px 100px;
+            margin-bottom: 300px;
+        }
+
+        .featuredtreats-one {
+            grid-area: "featuredtreats-one";
+        }
+
+        .featuredtreats-two {
+            grid-area: "featuredtreats-two";
+        }
+
+        .featuredtreats-three {
+            grid-area: "featuredtreats-three";
+        }
+
+        .img-featuredtreats img {
+            width: 430px;
+            height: 450px;
+            border-radius: 10px;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .img-featuredtreats {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .featuredtreats-price {
+            display: flex;
+            font-family: "Inter";
+            font-size: 37px;
+            font-weight: 650;
+            justify-content: space-between;
+            margin-right: 20%;
+            margin-left: 5px;
+        }
+
+        .box7 {
+            grid-area: box7;
+            background-image: url(./image/g.png);
+            background-size: cover;
+        }
+
+        .last-bra {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0px;
+
+        }
+
+        .lastbra-logo img {
+            width: 130px;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            margin-left: 80px;
+
+        }
+
+        /* .social-lastbra i{
+            background-color: #E9BD8C;
+        } */
+
+        .social-lastbra {
+            display: flex;
+            font-size: 25px;
+            margin-right: 200px;
+            margin-top: 70px;
+        }
+
+        .social-lastbra i {
+            margin: 0px 10px;
+            font-size: 60px;
+            color: #E9BD8C;
+        }
+
+        .social-lastbra i:hover {
+            cursor: pointer;
+            .button-basetwo {
+                background-color: #9dff00;
+                transition: 0.5s ease;
+                transform-origin: center center;
+                transform: scaleX(1);
+            }
+        }
+
+
+        .button-basetwo {
+            margin-top: 5px;
+            margin-left: 13px;
+            width: 50px;
+            height: 6px;
+            border-radius: 3px;
+        }
+
+
+        .social-lastbra p {
+            margin-right: 30px;
+            margin-top: 10px;
+            font-size: 30px;
+            font-weight: 600;
+            font-family: "Inter";
+        }
+
+        hr {
+            border: 0.1px solid #E9BD8D33;
+            margin: 0px 80px;
+            /* margin-right: 110px; */
+        }
+
+        .aa {
+            display: inline;
+            position: relative;
+            width: 80px;
+            height: 80px;
+            margin: 0;
+            background-color: #5d5d5d00;
+            overflow: hidden;
+        }
+
+        #icon1 {
+            position: absolute;
+            font-size: 34px;
+            left: 16px;
+            top: 11px;
+            color: #2c2c2c;
+            pointer-events: none;
+        }
+
+
+        #icon2 {
+            font-size: 60px;
+        }
+
+        .bb {
+            display: inline;
+            position: relative;
+            width: 70px;
+            height: 70px;
+            margin: 0;
+            margin-left: 10px;
+            padding-left: 20px;
+            /* background-color: #770000; */
+            overflow: hidden;
+        }
+
+        #icon3 {
+            position: absolute;
+            font-size: 70px;
+            left: -5px;
+            top: -5px;
+            color: rgb(41, 41, 41);
+            /* background-color: #933C24; */
+        }
+
+        .bb:hover {
+            .button-basetwo {
+                background-color: #9dff00;
+                transition: 0.5s ease;
+                transform-origin: center center;
+                transform: scaleX(1);
+            }
+        }
+
+        #icon4 {
+            width: 59px;
+            height: 58px;
+            background-color: #E9BD8C;
+            border-radius: 35%;
+        }
+
+
+
+        .lastpart-two {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 550px;
+            grid-template-areas:
+                "aboutus explore-two recentnews";
+            margin: 0px 80px;
+            margin-top: 20px;
+            font-family: "Poppins";
+            font-weight: 600;
+        }
+
+        .aboutus {
+            grid-area: "aboutus";
+            color: white;
+            font-size: 20px;
+            font-family: "Poppins";
+            line-height: 0;
+
+        }
+
+        .explore-two {
+            grid-area: "explore-two";
+            color: white;
+            display: flow-root;
+            font-size: 20px;
+            font-family: "Poppins";
+            line-height: 0;
+
+        }
+
+        .text-explore {
+            margin-top: 80px;
+            font-size: 30px;
+            font-weight: 600;
+            line-height: 1;
+        }
+
+        .text-explore a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .text-about {
+            margin-top: 80px;
+            font-size: 30px;
+            font-weight: 600;
+            line-height: 1;
+        }
+
+        .recentnews {
+            grid-area: "recentnews";
+            color: white;
+            font-size: 20px;
+            font-family: "Poppins";
+        }
+
+        .recent-img {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 120px 120px;
+            grid-template-areas:
+                "recent-one"
+                "recent-two";
+        }
+
+        .recent-one {
+            grid-area: "recent-one";
+            display: flex;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .recent-two {
+            grid-area: "recent-two";
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .img-recent img {
+            width: 130px;
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+
+        .head {
+            font-size: 50px;
+            font-family: "Inter";
+            color: #E9BD8D;
+            font-weight: 600;
+            line-height: 0;
+            margin-bottom: 80px;
+        }
+
+        .text-recent1 {
+            color: #E9BD8C;
+            margin-top: 10px;
+            font-size: 22px;
+            font-weight: 400;
+        }
+
+        .text-recent2 {
+            font-size: 30px;
+        }
+
+        .text-recent {
+            line-height: 0.2;
+        }
+
+        .final {
+            text-align: center;
+            color: #5D5D5D;
+            font-size: 30px;
+            font-family: "Inter";
+            font-weight: 600;
+            margin-bottom: 80px;
+            margin-top: 0px;
+        }
